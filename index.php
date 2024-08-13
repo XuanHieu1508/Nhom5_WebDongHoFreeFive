@@ -1,9 +1,13 @@
 <?php
+ob_start();
+session_start();
 include "model/sanpham.php";
 include "model/user.php";
 include "model/pdo.php";
 include "view/header.php";
 include "global.php";
+$spnew = loadall_sanpham_home();
+
 if ((isset($_GET['act']) && ($_GET['act']) != "")) {
     $act = $_GET['act'];
     switch ($act) {
@@ -50,7 +54,7 @@ if ((isset($_GET['act']) && ($_GET['act']) != "")) {
                 $check_user = check_user($user, $pass);
                 if (is_array($check_user)) {
                     $_SESSION['user'] = $check_user;
-                    header('Location: home.php');
+                    header('Location: index.php');
                     // $thongbao = "Đã đăng nhập thành công";
                 } else {
                     $thongbao = "Thông tin đăng nhập tài khoản hoặc mật khẩu không chính xác";
@@ -62,3 +66,4 @@ if ((isset($_GET['act']) && ($_GET['act']) != "")) {
         include "view/home.php";
     }
     include "view/footer.php";
+ob_end_flush();

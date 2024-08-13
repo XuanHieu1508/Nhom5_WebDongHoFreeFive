@@ -31,10 +31,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <link rel="dns-prefetch" href="./http://use.fontawesome.com/" />
-    <link rel="dns-prefetch" href="./http://maxcdn.bootstrapcdn.com/" />
-    <link rel="dns-prefetch" href="./http://fonts.googleapis.com/" />
-    <link rel="dns-prefetch" href="./http://s.w.org/" />
+    <link rel="dns-prefetch" href="http://use.fontawesome.com/" />
+    <link rel="dns-prefetch" href="http://maxcdn.bootstrapcdn.com/" />
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+    <link rel="dns-prefetch" href="http://s.w.org/" />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -893,42 +893,11 @@
                             >
                               <i class=""></i>
                               <span class="link_content">
-                                <span class="link_text"> Đồng hồ nam </span>
+                                <span class="link_text"> Sản phẩm </span>
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-390"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-390 default_dropdown default_style drop_to_right submenu_default_width columns1"
-                          >
-                            <a
-                              href="./dong-ho-nu/index.html"
-                              class="item_link disable_icon"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <i class=""></i>
-                              <span class="link_content">
-                                <span class="link_text"> Đồng hồ nữ </span>
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            id="menu-item-391"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-391 default_dropdown default_style drop_to_right submenu_default_width columns1"
-                          >
-                            <a
-                              href="./phu-kien/index.html"
-                              class="item_link disable_icon"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <i class=""></i>
-                              <span class="link_content">
-                                <span class="link_text"> Phụ kiện </span>
-                              </span>
-                            </a>
-                          </li>
+                          
                           <li
                             id="menu-item-388"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-388 default_dropdown default_style drop_to_right submenu_default_width columns1"

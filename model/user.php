@@ -12,4 +12,4 @@
             $sql="select * from user where email='".$email."'";
             $sp=pdo_query_one($sql);
             return $sp;
-        }
+        } 
