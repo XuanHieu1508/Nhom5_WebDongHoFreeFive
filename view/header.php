@@ -729,58 +729,90 @@
               <!-- Right Elements -->
               
               <div class="flex-col hide-for-medium flex-right">
-                <ul
-                  class="header-nav header-nav-main nav nav-right nav-size-large nav-spacing-xlarge"
-                >
-                <?php
-                if (isset($_SESSION['user'])) {
-                extract($_SESSION['user']);
-              ?>
-                  <li class="account-item has-icon">
-                    <a
-                      href="./index.php?act=dangnhap"
-                      class="nav-top-link nav-top-not-logged-in is-small"
-                    >
-                      <span> <?=$user?> </span> </a
-                    ><!-- .account-login-link -->
-                  </li>
-                  <?php
-                    } else {
-                  ?>
-                  <li class="account-item has-icon">
-                    <a
-                      href="./index.php?act=dangnhap"
-                      class="nav-top-link nav-top-not-logged-in is-small"
-                    >
-                      <span> Đăng nhập </span> </a
-                    ><!-- .account-login-link -->
-                  </li>
-                  <?php } ?>
-                  <li class="cart-item has-icon has-dropdown">
-                    <a
-                      href="./gio-hang/index.html"
-                      title="Giỏ hàng"
-                      class="header-cart-link is-small"
-                    >
-                      <span class="header-cart-title"> Giỏ hàng </span>
-
-                      <i class="icon-shopping-cart" data-icon-label="0"> </i>
-                    </a>
-
-                    <ul class="nav-dropdown nav-dropdown-default">
-                      <li class="html widget_shopping_cart">
-                        <div class="widget_shopping_cart_content">
-                          <p class="woocommerce-mini-cart__empty-message">
-                            Chưa có sản phẩm trong giỏ hàng.
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                    <!-- .nav-dropdown -->
-                  </li>
+    <ul class="header-nav header-nav-main nav nav-right nav-size-large nav-spacing-xlarge">
+        <?php
+        if (isset($_SESSION['user'])) {
+            extract($_SESSION['user']);
+        ?>
+            <li class="account-item has-icon">
+                <a class="nav-top-link nav-top-not-logged-in is-small">
+                    <span><?=$user?></span>
+                </a>
+                <ul class="user-dropdown">
+                    <li><a href="index.php?act=edit_user">Thông tin tài khoản</a></li>
+                    <li><a href="index.php?act=mybill">Đơn hàng của tôi</a></li>
+                    <?php
+                    if($role==1){
+                    ?>
+                    <li><a href="admin/home.php">Trang Admin</a></li>
+                    <?php }?>
+                    <li><a href="index.php?act=thoat">Đăng xuất</a></li>
                 </ul>
-              </div>
+            </li>
+        <?php
+        } else {
+        ?>
+            <li class="account-item has-icon">
+                <a href="./index.php?act=dangnhap" class="nav-top-link nav-top-not-logged-in is-small">
+                    <span>Đăng nhập</span>
+                </a>
+            </li>
+        <?php } ?>
+        <li class="cart-item has-icon has-dropdown">
+            <a href="./gio-hang/index.html" title="Giỏ hàng" class="header-cart-link is-small">
+                <span class="header-cart-title">Giỏ hàng</span>
+                <i class="icon-shopping-cart" data-icon-label="0"></i>
+            </a>
 
+            <ul class="nav-dropdown nav-dropdown-default">
+                <li class="html widget_shopping_cart">
+                    <div class="widget_shopping_cart_content">
+                        <p class="woocommerce-mini-cart__empty-message">
+                            Chưa có sản phẩm trong giỏ hàng.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<style>
+.account-item {
+    position: relative;
+    display: inline-block;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.user-dropdown li {
+    padding: 8px 16px;
+}
+
+.user-dropdown li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.user-dropdown li a:hover {
+    background-color: #f1f1f1;
+}
+
+.account-item:hover .user-dropdown {
+    display: block;
+}
+</style>
               <!-- Mobile Right Elements -->
               <div class="flex-col show-for-medium flex-right">
                 <ul class="mobile-nav nav nav-right">

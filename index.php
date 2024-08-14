@@ -68,6 +68,24 @@ if ((isset($_GET['act']) && ($_GET['act']) != "")) {
             }
                 include "user/dangnhap.php";
                 break;
+            case 'thoat':
+                session_unset();
+                header('Location: index.php');
+                break;
+            case 'edit_user':
+                    if (isset($_POST['edit_user']) && ($_POST['edit_user'])) {
+                        $user = $_POST['user'];
+                        $pass = $_POST['pass'];
+                        $email = $_POST['email'];
+                        $address = $_POST['address'];
+                        $tel = $_POST['tel'];
+                        $id = $_POST['id'];
+                        update_user($email, $user, $pass, $address, $tel, $id);
+                        $_SESSION['user'] = check_user($user, $pass);
+                        header('Location: index.php?act=edit_user');
+                    }
+                    include "view/user/edit_user.php";
+                    break;
     }}else {
         include "view/home.php";
     }
