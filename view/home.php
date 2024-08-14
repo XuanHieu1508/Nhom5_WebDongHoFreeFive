@@ -205,7 +205,7 @@
                               <div class="price-wrapper">
                                 <span class="price"
                                   ><span class="woocommerce-Price-amount amount"
-                                    >2,190,000&nbsp;<span
+                                    >' . $price . '&nbsp;<span
                                       class="woocommerce-Price-currencySymbol"
                                       >&#8363;</span
                                     ></span

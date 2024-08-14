@@ -744,7 +744,7 @@
                     <?php
                     if($role==1){
                     ?>
-                    <li><a href="admin/home.php">Trang Admin</a></li>
+                    <li><a href="admin/index.php">Trang Admin</a></li>
                     <?php }?>
                     <li><a href="index.php?act=thoat">Đăng xuất</a></li>
                 </ul>

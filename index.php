@@ -84,7 +84,32 @@ if ((isset($_GET['act']) && ($_GET['act']) != "")) {
                         $_SESSION['user'] = check_user($user, $pass);
                         header('Location: index.php?act=edit_user');
                     }
-                    include "view/user/edit_user.php";
+                    include "user/edit_user.php";
+                    break;
+                case 'addtocart':
+                    if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                        $id = $_POST['id'];
+                        $namesp = $_POST['namesp'];
+                        $img = $_POST['img'];
+                        $price = $_POST['price'];
+                        $soluong = 1;
+                        $pay = $price * $soluong;
+                        $spadd = [$id, $namesp, $img, $price, $soluong, $pay];
+                        array_push($_SESSION['mycart'], $spadd);
+                        }
+                    include "view/cart/viewcart.php";
+                    break;
+                case 'deletecart':
+                    if(isset($_GET['idcart'])){
+                        array_splice($_SESSION['mycart'],$_GET['idcart'],1);
+                    }   
+                    else{
+                        $_SESSION['mycart']=[];
+                    }
+                    header('Location: index.php?act=viewcart');
+                    break;
+                case 'viewcart':
+                    include "view/cart/viewcart.php";
                     break;
     }}else {
         include "view/home.php";

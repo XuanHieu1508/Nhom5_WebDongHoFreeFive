@@ -2,7 +2,7 @@
 include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";
-
+include "header.php";
 
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
@@ -111,8 +111,25 @@ if (isset($_GET['act'])) {
             $listsanpham = loadall_sanpham("", 0);
             include 'sanpham/list.php';
             break;
+        case 'user':
+            $list_user = loadall_taikhoan();
+            include "user/list.php";
+            break;
+        case 'deletetk':
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_tk($_GET['id']);
+            }
+            $list_user = loadall_taikhoan();
+            include "user/list.php";
+            break;
+        default:
+            include 'home.php';
+            break;
         }
     }
-    
+    else {
+    include 'home.php';
+}
+include "footer.php";
 
 ?>
