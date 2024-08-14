@@ -114,7 +114,6 @@
               }
             </style>
           </section>
-
           <section class="section" id="section_885068874">
             <div class="bg section-bg fill bg-fill bg-loaded"></div>
             <!-- .section-bg -->
@@ -134,35 +133,71 @@
                       class="row large-columns-5 medium-columns-3 small-columns-2 row-small slider row-slider slider-nav-circle slider-nav-push"
                       data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'
                     >
-                    
                     <?php
-               foreach ($spnew as $sp) {
-                extract($sp);
-                $hinh = $img_path . $img;
-                $linksp="index.php?act=sanphamct&idsp=".$id;
-                echo
-                  '<div class="col">
-                      <div class="col-inner">
-                        <div
+                        foreach ($spnew as $sp) {
+                        extract($sp);
+                        $hinh = $img_path . $img;
+                        $linksp="index.php?act=sanphamct&idsp=".$id;
+                        echo '
+                      <div class="col">
+                        <div class="col-inner">
+                          <div
                             class="badge-container absolute left top z-1"
                           ></div>
-                        <div
+                          <div
                             class="product-small box has-hover box-normal box-text-bottom"
                           >
+                          
                             <div class="box-image" style="width: 90%">
                               <div class="">
-                                <img width="300"
+                                <a href="'.$linksp.'">
+                                  <img
+                                    width="300"
                                     height="300"
-                                     src="'.$hinh.'" 
-                                     class="show-on-hover absolute fill hide-for-small back-image"
+                                    src=""
+                                    class="show-on-hover absolute fill hide-for-small back-image"
                                     alt=""
+                                    srcset="
+                                      '.$img.' 300w,
+                                      '.$img.' 280w,
+                                      '.$img.' 400w,
+                                      '.$img.'        600w,
+                                      '.$img.' 100w
+                                    "
                                     sizes="(max-width: 300px) 100vw, 300px"
-                                    />
+                                  /><img
+                                    width="300"
+                                    height="300"
+                                    src="'.$img.'"
+                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                    alt=""
+                                    srcset="
+                                      '.$img.'  300w,
+                                      '.$img.'  280w,
+                                      '.$img.'  400w,
+                                      '.$img.'  768w,
+                                      '.$img.'  800w,
+                                      https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-600x600.jpg  600w,
+                                      https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-100x100.jpg  100w,
+                                      https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x.jpg         1024w
+                                    "
+                                    sizes="(max-width: 300px) 100vw, 300px"
+                                  />
+                                </a>
+                              </div>
+                              <div
+                                class="image-tools top right show-on-hover"
+                              ></div>
+                              <div
+                                class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
+                              ></div>
                             </div>
+                            <!-- box-image -->
+
                             <div class="box-text text-center">
                               <div class="title-wrapper">
                                 <p class="name product-title">
-                                  <a href="'.$linksp.'"
+                                  <a href="kashmir-40mm-classic/index.html"
                                     >'.$namesp.'</a
                                   >
                                 </p>
@@ -170,7 +205,7 @@
                               <div class="price-wrapper">
                                 <span class="price"
                                   ><span class="woocommerce-Price-amount amount"
-                                    >' . $price . '&nbsp;<span
+                                    >2,190,000&nbsp;<span
                                       class="woocommerce-Price-currencySymbol"
                                       >&#8363;</span
                                     ></span
@@ -178,17 +213,18 @@
                                 >
                               </div>
                             </div>
+                            <!-- box-text -->
                           </div>
+                          <!-- box -->
                         </div>
-                      </div>';
-            }
-            ?> 
-                      
-
-                      
+                        <!-- .col-inner -->
+                      </div> ';}
+                      ?> 
+                      <!-- col -->
+                      <!-- col -->
                     </div>
                     <a class="button success">
-                      <span>XEM TẤT CẢ SẢN PHẨM</span>
+                      <span>XEM TẤT CẢ SẢN PHẨM MỚI</span>
                     </a>
                   </div>
                 </div>
@@ -197,749 +233,12 @@
             <!-- .section-content -->
 
             <style scope="scope">
-              #section_1759831603 {
+              #section_885068874 {
                 padding-top: 22px;
                 padding-bottom: 22px;
               }
             </style>
           </section>
-
-          <section class="section" id="section_1996045931">
-            <div class="bg section-bg fill bg-fill"></div>
-            <!-- .section-bg -->
-
-            <div class="section-content relative">
-              <div class="row" id="row-594763503">
-                <div class="col div-no-padding small-12 large-12">
-                  <div class="col-inner">
-                    <h3 class="title-home" style="text-align: center">
-                      BỘ SƯU TẬP 2019
-                    </h3>
-                    <div
-                      class="row align-middle align-center"
-                      id="row-915398467"
-                    >
-                      <div
-                        class="col div-no-padding medium-10 small-12 large-10"
-                      >
-                        <div class="col-inner">
-                          <div
-                            class="row large-columns-3 medium-columns- small-columns-2 row-small slider row-slider slider-nav-circle slider-nav-push"
-                            data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : 4000}'
-                          >
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                ></div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a
-                                        href="./dong-ho-calvin-klein-nu-k3m22u26/index.html"
-                                      >
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-300x300.jpg  300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-280x280.jpg  280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-400x400.jpg  400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-768x768.jpg  768w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-800x800.jpg  800w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-600x600.jpg  600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1-100x100.jpg  100w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927695827K3M22U26-Desktop-1.jpg         1000w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a
-                                          href="./dong-ho-calvin-klein-nu-k3m22u26/index.html"
-                                          >Đồng hồ Calvin Klein Nữ K3M22U26</a
-                                        >
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><span
-                                          class="woocommerce-Price-amount amount"
-                                          >6,290,000&nbsp;<span
-                                            class="woocommerce-Price-currencySymbol"
-                                            >&#8363;</span
-                                          ></span
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                ></div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a
-                                        href="./dong-ho-calvin-klein-nu-k4e2/index.html"
-                                      >
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-300x300.jpg  300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-280x280.jpg  280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-400x400.jpg  400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-768x768.jpg  768w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-800x800.jpg  800w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-600x600.jpg  600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1-100x100.jpg  100w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927740677K4E2N11N-Desktop-1.jpg         1000w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a
-                                          href="./dong-ho-calvin-klein-nu-k4e2/index.html"
-                                          >Đồng hồ Calvin Klein Nữ K4E2</a
-                                        >
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><span
-                                          class="woocommerce-Price-amount amount"
-                                          >6,290,000&nbsp;<span
-                                            class="woocommerce-Price-currencySymbol"
-                                            >&#8363;</span
-                                          ></span
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                ></div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a
-                                        href="./dong-ho-calvin-klein-nu/index.html"
-                                      >
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-300x300.jpg  300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-280x280.jpg  280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-400x400.jpg  400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-768x768.jpg  768w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-800x800.jpg  800w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-600x600.jpg  600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1-100x100.jpg  100w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1574927971172K5024404-Desktop-1.jpg         1000w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a
-                                          href="./dong-ho-calvin-klein-nu/index.html"
-                                          >Đồng hồ Calvin Klein Nữ</a
-                                        >
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><span
-                                          class="woocommerce-Price-amount amount"
-                                          >10,190,000&nbsp;<span
-                                            class="woocommerce-Price-currencySymbol"
-                                            >&#8363;</span
-                                          ></span
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                ></div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a
-                                        href="./dong-ho-thuy-si-nu-silvana/index.html"
-                                      >
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-300x300.jpg  300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-280x280.jpg  280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-400x400.jpg  400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-768x768.jpg  768w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-800x800.jpg  800w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-600x600.jpg  600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1-100x100.jpg  100w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1568974144416ST28QRR24SRG-Desktop-1.jpg         1000w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a
-                                          href="./dong-ho-thuy-si-nu-silvana/index.html"
-                                          >Đồng hồ Thụy sĩ Nữ Silvana</a
-                                        >
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><span
-                                          class="woocommerce-Price-amount amount"
-                                          >8,190,000&nbsp;<span
-                                            class="woocommerce-Price-currencySymbol"
-                                            >&#8363;</span
-                                          ></span
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                ></div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a
-                                        href="./dong-ho-tissot-nu-t05/index.html"
-                                      >
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-300x300.jpg  300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-280x280.jpg  280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-400x400.jpg  400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-768x768.jpg  768w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-800x800.jpg  800w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-600x600.jpg  600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1-100x100.jpg  100w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1570002715222T058.109.33.456.00-Desktop-1.jpg         1000w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a
-                                          href="./dong-ho-tissot-nu-t05/index.html"
-                                          >Đồng hồ Tissot Nữ T05</a
-                                        >
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><span
-                                          class="woocommerce-Price-amount amount"
-                                          >7,190,000&nbsp;<span
-                                            class="woocommerce-Price-currencySymbol"
-                                            >&#8363;</span
-                                          ></span
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                ></div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a href="./kashmir-40mm-classic/index.html">
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/bt-classic-1024x1024-2x-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-300x300.jpg  300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-280x280.jpg  280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-400x400.jpg  400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-768x768.jpg  768w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-800x800.jpg  800w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-600x600.jpg  600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-100x100.jpg  100w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x.jpg         1024w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a
-                                          href="./kashmir-40mm-classic/index.html"
-                                          >KASHMIR &#8211; 40MM CLASSIC</a
-                                        >
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><span
-                                          class="woocommerce-Price-amount amount"
-                                          >2,190,000&nbsp;<span
-                                            class="woocommerce-Price-currencySymbol"
-                                            >&#8363;</span
-                                          ></span
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                >
-                                  <div class="callout badge badge-circle">
-                                    <div class="badge-inner secondary on-sale">
-                                      <span class="onsale">-8%</span>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a href="./crux/index.html">
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-300x300.jpg  300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-280x280.jpg  280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-400x400.jpg  400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-768x768.jpg  768w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-800x800.jpg  800w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-600x600.jpg  600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master-100x100.jpg  100w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/dong-ho-mvmt-crux-master.jpg         1024w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a href="./crux/index.html">CRUX</a>
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><del
-                                          ><span
-                                            class="woocommerce-Price-amount amount"
-                                            >5,200,000&nbsp;<span
-                                              class="woocommerce-Price-currencySymbol"
-                                              >&#8363;</span
-                                            ></span
-                                          ></del
-                                        >
-                                        <ins
-                                          ><span
-                                            class="woocommerce-Price-amount amount"
-                                            >4,800,000&nbsp;<span
-                                              class="woocommerce-Price-currencySymbol"
-                                              >&#8363;</span
-                                            ></span
-                                          ></ins
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-
-                            <div class="col">
-                              <div class="col-inner">
-                                <div
-                                  class="badge-container absolute left top z-1"
-                                ></div>
-                                <div
-                                  class="product-small box has-hover box-normal box-text-bottom"
-                                >
-                                  <div class="box-image" style="width: 80%">
-                                    <div class="">
-                                      <a href="./gunmetal-rose/index.html">
-                                        <img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg"
-                                          class="show-on-hover absolute fill hide-for-small back-image"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/2-7924b629b302406c9a553e3ef00763a1-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        /><img
-                                          width="300"
-                                          height="300"
-                                          src="wp-content/uploads/2019/12/1-11695803e29a4e9bbd9f3efd62c975dd-master-300x300.jpg"
-                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                          alt=""
-                                          srcset="
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1-11695803e29a4e9bbd9f3efd62c975dd-master-300x300.jpg 300w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1-11695803e29a4e9bbd9f3efd62c975dd-master-280x280.jpg 280w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1-11695803e29a4e9bbd9f3efd62c975dd-master-400x400.jpg 400w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1-11695803e29a4e9bbd9f3efd62c975dd-master.jpg         600w,
-                                            https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/1-11695803e29a4e9bbd9f3efd62c975dd-master-100x100.jpg 100w
-                                          "
-                                          sizes="(max-width: 300px) 100vw, 300px"
-                                        />
-                                      </a>
-                                    </div>
-                                    <div
-                                      class="image-tools top right show-on-hover"
-                                    ></div>
-                                    <div
-                                      class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"
-                                    ></div>
-                                  </div>
-                                  <!-- box-image -->
-
-                                  <div class="box-text text-center">
-                                    <div class="title-wrapper">
-                                      <p class="name product-title">
-                                        <a href="./gunmetal-rose/index.html"
-                                          >GUNMETAL ROSE</a
-                                        >
-                                      </p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                      <span class="price"
-                                        ><span
-                                          class="woocommerce-Price-amount amount"
-                                          >5,200,000&nbsp;<span
-                                            class="woocommerce-Price-currencySymbol"
-                                            >&#8363;</span
-                                          ></span
-                                        ></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <!-- box-text -->
-                                </div>
-                                <!-- box -->
-                              </div>
-                              <!-- .col-inner -->
-                            </div>
-                            <!-- col -->
-                          </div>
-                        </div>
-                      </div>
-
-                      <style scope="scope"></style>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- .section-content -->
-
-            <style scope="scope">
-              #section_1996045931 {
-                padding-top: 0px;
-                padding-bottom: 0px;
-              }
-              #section_1996045931 .section-bg.bg-loaded {
-                background-image: url(wp-content/uploads/2019/12/ant_product_bg.jpg);
-              }
-
-              @media (min-width: 550px) {
-                #section_1996045931 {
-                  padding-top: 30px;
-                  padding-bottom: 30px;
-                }
-              }
-            </style>
-          </section>
-
           <section class="section" id="section_398962713">
             <div class="bg section-bg fill bg-fill bg-loaded"></div>
             <!-- .section-bg -->

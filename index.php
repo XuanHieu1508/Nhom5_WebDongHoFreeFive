@@ -36,6 +36,12 @@ if ((isset($_GET['act']) && ($_GET['act']) != "")) {
                 include "view/home.php";
             }
             break;
+        case 'gioithieu':
+            include "view/gioithieu.php";
+            break;
+        case 'tintuc':
+            include "view/tintuc.php";
+            break;
         case 'dangky':
             if (isset($_POST['register'])) {
                 

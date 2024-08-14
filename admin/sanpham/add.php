@@ -60,7 +60,7 @@
                     </div>
                     <div class="row">
                         Giá <br>
-                        <input type="text" name="price">
+                        <input type="number" name="price">
                     </div>
                     <div class="row">
                         Ảnh <br>

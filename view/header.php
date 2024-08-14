@@ -727,10 +727,26 @@
               </div>
 
               <!-- Right Elements -->
+              
               <div class="flex-col hide-for-medium flex-right">
                 <ul
                   class="header-nav header-nav-main nav nav-right nav-size-large nav-spacing-xlarge"
                 >
+                <?php
+                if (isset($_SESSION['user'])) {
+                extract($_SESSION['user']);
+              ?>
+                  <li class="account-item has-icon">
+                    <a
+                      href="./index.php?act=dangnhap"
+                      class="nav-top-link nav-top-not-logged-in is-small"
+                    >
+                      <span> <?=$user?> </span> </a
+                    ><!-- .account-login-link -->
+                  </li>
+                  <?php
+                    } else {
+                  ?>
                   <li class="account-item has-icon">
                     <a
                       href="./index.php?act=dangnhap"
@@ -739,6 +755,7 @@
                       <span> Đăng nhập </span> </a
                     ><!-- .account-login-link -->
                   </li>
+                  <?php } ?>
                   <li class="cart-item has-icon has-dropdown">
                     <a
                       href="./gio-hang/index.html"
@@ -854,7 +871,7 @@
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-41 current_page_item menu-item-387 default_dropdown default_style drop_to_right submenu_default_width columns1"
                           >
                             <a
-                              href="./index.html"
+                              href="index.php"
                               class="item_link disable_icon"
                               role="menuitem"
                               tabindex="0"
@@ -870,7 +887,7 @@
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-386 default_dropdown default_style drop_to_right submenu_default_width columns1"
                           >
                             <a
-                              href="./gioi-thieu/index.html"
+                              href="index.php?act=gioithieu"
                               class="item_link disable_icon"
                               role="menuitem"
                               tabindex="0"
@@ -886,7 +903,7 @@
                             class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-389 default_dropdown default_style drop_to_right submenu_default_width columns1"
                           >
                             <a
-                              href="./dong-ho-nam/index.html"
+                              href="index.php?act=sanpham"
                               class="item_link disable_icon"
                               role="menuitem"
                               tabindex="0"
@@ -903,7 +920,7 @@
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-388 default_dropdown default_style drop_to_right submenu_default_width columns1"
                           >
                             <a
-                              href="./category/tin-tuc/index.html"
+                              href="index.php?act=tintuc"
                               class="item_link disable_icon"
                               role="menuitem"
                               tabindex="0"
