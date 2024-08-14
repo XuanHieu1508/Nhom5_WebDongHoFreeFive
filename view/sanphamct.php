@@ -111,7 +111,7 @@
 </div>
  '?>
 	
-	<form class="cart" action="https://dongho.giaodienwebmau.com/black-link/" method="post" enctype='multipart/form-data'>
+	<form class="cart" action="index.php?act=addtocart" method="post" enctype='multipart/form-data'>
 		
 			<div class="quantity buttons_added">
 		<input type="button" value="-" class="minus button is-form">		<label class="screen-reader-text" for="quantity_668e94de461ae">Số lượng</label>
@@ -129,7 +129,7 @@
 			inputmode="numeric" />
 		<input type="button" value="+" class="plus button is-form">	</div>
 	
-		<button type="submit" name="add-to-cart" value="298" class="single_add_to_cart_button button alt">Mua hàng</button>
+		<input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
 
 			</form>
 		<div class="icon-box featured-box div-icon icon-box-left text-left"  >

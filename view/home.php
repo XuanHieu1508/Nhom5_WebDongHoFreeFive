@@ -158,28 +158,28 @@
                                     class="show-on-hover absolute fill hide-for-small back-image"
                                     alt=""
                                     srcset="
-                                      '.$img.' 300w,
-                                      '.$img.' 280w,
-                                      '.$img.' 400w,
-                                      '.$img.'        600w,
-                                      '.$img.' 100w
+                                      ' . $hinh . ' 300w,
+                                      ' . $hinh . ' 280w,
+                                      ' . $hinh . ' 400w,
+                                      ' . $hinh . '        600w,
+                                      ' . $hinh . ' 100w
                                     "
                                     sizes="(max-width: 300px) 100vw, 300px"
                                   /><img
                                     width="300"
                                     height="300"
-                                    src="'.$img.'"
+                                    src="' . $hinh . '"
                                     class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                     alt=""
                                     srcset="
-                                      '.$img.'  300w,
-                                      '.$img.'  280w,
-                                      '.$img.'  400w,
-                                      '.$img.'  768w,
-                                      '.$img.'  800w,
-                                      https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-600x600.jpg  600w,
-                                      https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x-100x100.jpg  100w,
-                                      https://dongho.giaodienwebmau.com/wp-content/uploads/2019/12/bt-classic-1024x1024-2x.jpg         1024w
+                                      ' . $hinh . '  300w,
+                                      ' . $hinh . '  280w,
+                                      ' . $hinh . '  400w,
+                                      ' . $hinh . '  768w,
+                                      ' . $hinh . '  800w,
+                                      ' . $hinh . '  600w,
+                                      ' . $hinh . '  100w,
+                                      ' . $hinh . '         1024w
                                     "
                                     sizes="(max-width: 300px) 100vw, 300px"
                                   />
@@ -197,7 +197,7 @@
                             <div class="box-text text-center">
                               <div class="title-wrapper">
                                 <p class="name product-title">
-                                  <a href="kashmir-40mm-classic/index.html"
+                                  <a href="'.$linksp.'"
                                     >'.$namesp.'</a
                                   >
                                 </p>

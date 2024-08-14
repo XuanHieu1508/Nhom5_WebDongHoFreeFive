@@ -759,7 +759,7 @@
             </li>
         <?php } ?>
         <li class="cart-item has-icon has-dropdown">
-            <a href="./gio-hang/index.html" title="Giỏ hàng" class="header-cart-link is-small">
+            <a href="index.php?act=viewcart" title="Giỏ hàng" class="header-cart-link is-small">
                 <span class="header-cart-title">Giỏ hàng</span>
                 <i class="icon-shopping-cart" data-icon-label="0"></i>
             </a>
