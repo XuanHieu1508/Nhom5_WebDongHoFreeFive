@@ -72,18 +72,4 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#nguoidung"
-                    aria-expanded="true" aria-controls="nguoidung">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Người dùng</span>
-                </a>
-                <div id="nguoidung" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="index.php?act=user">Danh sách</a>
-                    </div>
-                </div>
-            </li>
         </ul>

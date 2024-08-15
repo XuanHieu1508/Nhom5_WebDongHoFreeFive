@@ -1,5 +1,4 @@
 <div class="boxtrai mr">
-    <div class="boxtitle bg-primary text-white p-3 mb-3">Giỏ hàng</div>
     <div class="row">
         <table class="table table-bordered">
             <tr>
