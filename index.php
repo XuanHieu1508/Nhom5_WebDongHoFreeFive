@@ -1,9 +1,10 @@
 <?php
 ob_start();
 session_start();
-include "model/sanpham.php";
-include "model/user.php";
 include "model/pdo.php";
+include "model/sanpham.php";
+include "model/cart.php";
+include "model/user.php";
 include "view/header.php";
 include "global.php";
 

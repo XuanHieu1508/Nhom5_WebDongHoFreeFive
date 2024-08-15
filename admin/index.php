@@ -1,6 +1,7 @@
 <?php
 include "../model/pdo.php";
 include "../model/danhmuc.php";
+include "../model/cart.php";
 include "../model/sanpham.php";
 include "header.php";
 
@@ -121,6 +122,23 @@ if (isset($_GET['act'])) {
             }
             $list_user = loadall_taikhoan();
             include "user/list.php";
+            break;
+        case 'listbill':
+            if(isset($_POST['kyw'])&& ($_POST['kyw']!="")){
+                $kyw=$_POST['kyw'];
+            }
+            else{
+                $kyw="";
+            }
+            $listbill=load_all_bill($kyw,0);
+            include 'bill/listbill.php';
+            break;
+        case 'delete_bill':
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_bill($_GET['id']);
+            }
+            $listbill= load_all_bill();
+            include "bill/listbill.php";
             break;
         default:
             include 'home.php';

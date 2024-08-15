@@ -1,5 +1,4 @@
-<div class="row mb">
-    <div class="boxtrai mr">
+ <div class="boxtrai mr">
         <div class="boxtitle">Đơn hàng của bạn</div>
         <div class="row boxcontent">
             <table>
@@ -31,9 +30,3 @@
         </div>
 
     </div>
-    <div class="boxphai">
-        <?php
-        include "view/boxright.php";
-        ?>
-    </div>
-</div>

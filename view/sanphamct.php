@@ -110,7 +110,6 @@
   <span class="woocommerce-Price-amount amount">' . $price . '&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></p>
 </div>
  '?>
-	
 	<form class="cart" action="index.php?act=addtocart" method="post" enctype='multipart/form-data'>
 		
 			<div class="quantity buttons_added">
@@ -128,8 +127,55 @@
 			size="4"
 			inputmode="numeric" />
 		<input type="button" value="+" class="plus button is-form">	</div>
+	<?php
+
+	// Hàm xử lý thêm sản phẩm vào giỏ hàng
+	function add_to_cart($id, $namesp, $img, $price) {
+		// Kiểm tra xem giỏ hàng đã tồn tại chưa
+		if (!isset($_SESSION['cart'])) {
+			$_SESSION['cart'] = [];
+		}
 	
-		<input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+		// Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+		$found = false;
+		foreach ($_SESSION['cart'] as &$item) {
+			if ($item['id'] == $id) {
+				// Nếu sản phẩm đã tồn tại, tăng số lượng
+				$item['quantity'] += 1;
+				$found = true;
+				break;
+			}
+		}
+	
+		// Nếu sản phẩm chưa có trong giỏ hàng, thêm mới vào
+		if (!$found) {
+			$_SESSION['cart'][] = [
+				'id' => $id,
+				'namesp' => $namesp,
+				'img' => $img,
+				'price' => $price,
+				'quantity' => 1
+			];
+		}
+	}
+	
+	// Xử lý khi người dùng nhấn nút "Thêm vào giỏ hàng"
+	if (isset($_POST['addtocart'])) {
+		$id = $_POST['id'];
+		$namesp = $_POST['namesp'];
+		$img = $_POST['img'];
+		$price = $_POST['price'];
+	
+		add_to_cart($id, $namesp, $img, $price);
+	}
+	 echo'
+			<form action="index.php?act=addtocart" method="post">
+                <input type="hidden" name="id" value="'.$id.'">
+                <input type="hidden" name="namesp" value="'.$namesp.'">
+                <input type="hidden" name="img" value="'.$img.'">
+                <input type="hidden" name="price" value="'.$price.'">
+                <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+        </form>' ?>
 
 			</form>
 		<div class="icon-box featured-box div-icon icon-box-left text-left"  >

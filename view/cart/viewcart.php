@@ -1,27 +1,52 @@
-<!-- .header-bottom -->
-
-<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div><!-- .header-bg-container -->   </div><!-- header-wrapper-->
-</header>
-
-
-<main id="main" class="">
-<div id="content" class="content-area page-wrapper" role="main">
-	<div class="row row-main">
-		<div class="large-12 col">
-			<div class="col-inner">						
-					<div class="woocommerce"><div class="text-center pt pb">
-	<div class="woocommerce-notices-wrapper"></div><p class="cart-empty woocommerce-info">Chưa có sản phẩm nào trong giỏ hàng.</p>		<p class="return-to-shop">
-			<a class="button primary wc-backward" href="index.php">
-				Quay trở lại cửa hàng			</a>
-		</p>
-	</div></div>
-
-						
-												</div><!-- .col-inner -->
-		</div><!-- .large-12 -->
-	</div><!-- .row -->
+<div class="boxtrai mr">
+    <div class="boxtitle bg-primary text-white p-3 mb-3">Giỏ hàng</div>
+    <div class="row">
+        <table class="table table-bordered">
+            <tr>
+                <?php
+                view_cart(1);
+                ?>
+            </tr>
+        </table>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <a href="index.php?act=bill" class="custom-btn order-btn w-100">Đồng ý đặt hàng</a>
+        </div>
+        <div class="col-md-6">
+            <a href="index.php?act=deletecart" class="custom-btn delete-btn w-100">Xóa giỏ hàng</a>
+        </div>
+    </div>
 </div>
+<style>.custom-btn {
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
 
+.order-btn {
+    background-color: #28a745;
+    color: white;
+}
 
-</main><!-- #main -->
+.order-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
 
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+</style>
